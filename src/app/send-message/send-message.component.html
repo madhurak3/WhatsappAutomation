@@ -1,45 +1,46 @@
-<form [formGroup]="sendmsg" (ngSubmit)="collectSendMsg()">
-<section class="container" style="background-color: #8fc4b7;">
-	<div class="container"><br/><h1> Ready To Send Message Anytime?</h1></div>
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-8 col-xl-6">
-        <div class="card rounded-3">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp" style="height: 400px; background-position: center; background-size: cover;" alt="Sample photo">
-          <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Enter Details</h3>
-
-            <form class="px-md-2">
-
-              <div class="form-outline mb-4">
-                <input type="tel" id="contact" formControlName="contact" class="form-control" />
-                <label class="form-label" for="contact">Receiver Contact</label>
-              </div>
-
-
-	      <div class="md-form mb-4 pink-textarea active-pink-textarea">
-  		<textarea id="message" formControlName="message" class="md-textarea form-control" rows="3"></textarea>
-  		<label for="message">Your Message</label>
-	      </div>
-
-	      <div class="form-outline mb-4">
-                <input type="text" id="timehour" formControlName="timehour" class="form-control" />
-                <label class="form-label" for="timehour">Time Hour (24 hr format)</label>
-              </div>
-
-	      <div class="form-outline mb-4">
-                <input type="text" id="timemin" formControlName="timemin" class="form-control" />
-                <label class="form-label" for="timemin">Time Min</label>
-              </div>
-
-              <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
-
-            </form>
-
+<form>
+  <section class="container" style="background-color: #8fc4b7;">
+    <div class="container"><br/><h1> Ready To Send Message Anytime?</h1></div>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-8 col-xl-6">
+          <div class="card rounded-3">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp" style="height: 400px; background-position: center; background-size: cover;" alt="Sample photo">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Enter Details</h3>
+  
+              <form class="px-md-2"  [formGroup]="sendmsg" (ngSubmit)="collectSendMsg()">
+  
+                <div class="form-outline mb-4">
+                  <input type="tel" id="contact" formControlName="contact" class="form-control" />
+                  <label class="form-label" for="contact">Receiver Contact</label>
+                </div>
+  
+  
+          <div class="md-form mb-4 pink-textarea active-pink-textarea">
+        <textarea id="message" formControlName="message" class="md-textarea form-control" rows="3"></textarea>
+        <label for="message">Your Message</label>
+          </div>
+  
+          <div class="form-outline mb-4">
+                  <input type="text" id="timehour" formControlName="timehour" class="form-control" />
+                  <label class="form-label" for="timehour">Time Hour (24 hr format)</label>
+                </div>
+  
+          <div class="form-outline mb-4">
+                  <input type="text" id="timemin" formControlName="timemin" class="form-control" />
+                  <label class="form-label" for="timemin">Time Min</label>
+                </div>
+  
+                <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+  
+              </form>
+  
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-</form>
+  </section>
+  </form>
+  

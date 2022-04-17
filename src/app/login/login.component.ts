@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   collectLogin()
   {
-	console.log('HERE');
+    console.log('Register Form Value ',this.login.value)
   }
 
 }

@@ -22,7 +22,7 @@ export class SendMessageComponent implements OnInit {
 
    collectSendMsg()
   {
-	console.warn(this.sendmsg.value)
+	console.log(this.sendmsg.value)
   }
 
 }
