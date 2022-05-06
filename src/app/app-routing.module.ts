@@ -13,13 +13,27 @@ import {HistoryComponent} from './history/history.component'
 
 const routes: Routes = [
 	{
+		redirectTo: 'home',
+		pathMatch:'full',
+		path: ''
+	},
+	{
 		component: HomeComponent,
 		path: 'home'
 	},
 	{
 		component: LoginComponent,
+		path: 'home/login'
+	},
+	{
+		component: LoginComponent,
 		path: 'login'
 	},
+	{
+		component: LoginComponent,
+		path: 'home/register'
+	},
+	
 	{
 		component: RegisterComponent,
 		path: 'register'

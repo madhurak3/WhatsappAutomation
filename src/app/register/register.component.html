@@ -1,9 +1,11 @@
+
+<div><h1>WhatsAppAutomation</h1></div>
+
 <form [formGroup]="register" (ngSubmit)="collectRegister()">
-  <section class="h-100 bg-dark">
-    <div class="container py-5 h-100">
+    
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col">
-          <div class="card card-registration my-4">
+          <div class="card card-registration my-4" style="background-color: #efc2e0;">
             <div class="row g-0">
               <div class="col-xl-6 d-none d-xl-block">
                 <img
@@ -32,12 +34,12 @@
                     </div>
                   </div>
   
-       <div class="form-outline mb-4">
+                  <div class="form-outline mb-4">
                     <input type="email" id="email" formControlName="email" class="form-control form-control-lg" />
                     <label class="form-label" for="email">Email ID</label>
                   </div>
   
-        <div class="form-outline mb-4">
+                    <div class="form-outline mb-4">
                       <input type="tel" id="contactNumber" formControlName="contact" class="form-control form-control-lg" />
                       <label class="form-label" for="contactNumber">Contact Number</label>
                     </div>
@@ -64,43 +66,13 @@
                     <button (click)="getinfo()" type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
                   </div>
   
+                  <a routerLink="/login" style="text-align: right; font-size: larger;">Already Registered? Login!</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  </form>
-  
-  <!--<form [formGroup]="register" (ngSubmit)="collectRegister()">
-    <div class="form-group">
-      <label for="exampleInputPassword1">Name</label>
-      <input type="text" class="form-control" id="exampleInputName1" formControlName="name" placeholder="Enter Name">
-    </div>
-     <div class="form-group">
-      <label for="exampleInputPassword1">Contact number</label>
-      <input type="text" class="form-control" id="exampleInputContact1" formControlName="contact" placeholder="Enter Contact Number">
-    <small id="contactHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" placeholder="Enter Email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-      <div class="form-group">
-      <label for="exampleInputPassword1">Username</label>
-      <input type="text" class="form-control" id="exampleInputUsername1" formControlName="username" placeholder="Enter Username">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Enter Password">
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button (click)="getinfo()" type="submit" class="btn btn-primary">Submit</button>
-  </form>-->
+
+</form>
   

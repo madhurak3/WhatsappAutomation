@@ -12,7 +12,7 @@ import { PlayYtvideoComponent } from './play-ytvideo/play-ytvideo.component';
 import { TextToHandwrittenComponent } from './text-to-handwritten/text-to-handwritten.component';
 import { SendMailComponent } from './send-mail/send-mail.component';
 import { HistoryComponent } from './history/history.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component'
 
 @NgModule({
