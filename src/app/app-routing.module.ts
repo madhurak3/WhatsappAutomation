@@ -23,7 +23,8 @@ const routes: Routes = [
 	},
 	{
 		component: LoginComponent,
-		path: 'home/login'
+		path: 'home/login',
+		pathMatch:'prefix'
 	},
 	{
 		component: LoginComponent,
